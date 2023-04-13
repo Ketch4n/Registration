@@ -112,10 +112,18 @@
             type : "POST",
             url : base_url + 'verify',
             data : $(this).serialize(),
-            datatype : "json",
+            dataType : "json",
             success : function(data) {
                 
-                
+              
+                if(data.response){
+
+                    alert(data.message)
+                    window.location.href = base_url + 'dashboard';
+
+                }else {
+                    alert(data.message)
+                }
             }
         })
 

@@ -34,6 +34,7 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
+                                            <?php echo session()->get('user_name'); ?>
                                             <?php
                                             echo view('content/dashboard.php')
                                             ?>
