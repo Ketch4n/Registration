@@ -4,6 +4,19 @@
 <head>
    <?php echo view("include/meta.php")?>
    <?php echo view("include/css.php")?>  
+   <style>
+    .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;                                                                               
+       }
+    body
+       {
+        background-image: url("<?php echo base_url()?>/assets/images/breadcrumb-bg.jpg");
+        background-size: cover;
+       }
+    </style>
 
 </head>
 
@@ -20,7 +33,7 @@
                 <div class="col-sm-12" >
                     <!-- Authentication card start -->
 
-                        <form class="md-float-material form-material">
+                        <form id="login_form" class="md-float-material form-material">
                             <!-- <div class="text-center">
                                 <img src="assets/images/logo.png" alt="logo.png">
                             </div> -->
@@ -30,18 +43,7 @@
                                         <div class="col-md-12">
                                            <img class="logo"src="assets/images/img/peso.png">
                                            <style>
-                                            .logo {
-                                                display: block;
-                                                margin-left: auto;
-                                                margin-right: auto;
-                                                width: 50%;                                                                               
-                                                   }
-                                            body
-                                                   {
-                                                    background-image: url("assets/images/breadcrumb-bg.jpg");
-                                                    background-size: cover;
-                                                   }
-                                                  
+                                            
                                             </style>
                                         </div>
                                     </div>
@@ -76,7 +78,7 @@
                                     </div>
                                     <div class="row m-t-30">
                                         <div class="col-md-12">
-                                            <button type="button" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</button>
+                                            <button type="submit" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</button>
                                         </div>
                                     </div>
                                     <!-- <hr/> -->
@@ -101,6 +103,26 @@
         <!-- end of container-fluid -->
     </section>
     <?php echo view("include/script.php")?>
+    <script>
+
+    $('#login_form').on('submit', function(e){
+        e.preventDefault();
+        
+         $.ajax({
+            type : "POST",
+            url : base_url + 'verify',
+            data : $(this).serialize(),
+            datatype : "json",
+            success : function(data) {
+                
+                
+            }
+        })
+
+    })
+
+       
+    </script>
 </body>
 
 </html>

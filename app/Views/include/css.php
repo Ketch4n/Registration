@@ -25,4 +25,4 @@
 
 
 <!-- custom -->
-<link rel="stylesheet" type="text/css" href="assets/css/custom.css"> 
+<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/custom.css">

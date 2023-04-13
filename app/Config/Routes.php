@@ -32,6 +32,9 @@ $routes->set404Override();
 $routes->get('/', 'Login::index');
 
 $routes->get('/dashboard', 'Dashboard::index');
+
+//login
+$routes->post('verify', 'Login::verify');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
