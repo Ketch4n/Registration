@@ -32,7 +32,6 @@ $routes->set404Override();
 $routes->get('/', 'Login::index',['filter' => 'sessionCheck']);
 
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'authGuard']);
-
 //login
 $routes->post('verify', 'Login::verify');
 
