@@ -28,11 +28,17 @@
                                 </form>
                             </div> -->
                             <!-- <div class="pcoded-navigation-label">Navigation</div> -->
+                            <?php 
+                           $request = \Config\Services::request();
+                           $currentURL = $request->uri->getPath();
+                           
+                            ?>
+                       
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="active">
+                                <li class="pcoded-hasmenu <?= $currentURL == '/dashboard' ? "active" : '' ?>">
                                     <a href="<?php echo base_url()?>dashboard/" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext">Dashboard</span>
+                                        <span class="pcoded-mtext">Dashboard </span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -42,8 +48,8 @@
                                         <span class="pcoded-mtext">Basic</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class=" ">
+                                    <ul class="pcoded-submenu ">
+                                        <li class="<?= $currentURL == '/br' ? "active" : '' ?>">
                                             <a href="javascript:void(0)" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Breadcrumbs</span>
@@ -105,11 +111,11 @@
                                                 <span class="pcoded-mtext">Notifications</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
-                                        </li>
+                                        </li>  
                                     </ul>
                                 </li>
-                                <li class="">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <li class="pcoded-hasmenu <?= $currentURL == '/form' ? "active" : '' ?>">
+                                    <a href="<?php echo base_url('form')?>" class="waves-effect waves-dark ">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Form</span>
                                         <span class="pcoded-mcaret"></span>
@@ -189,3 +195,14 @@
                             </ul> -->
                         </div>
                     </nav>
+
+  <script>
+            var a = document.querySelectorAll("a");
+            for (var i = 0, length = a.length; i < length; i++) {
+              a[i].onclick = function() {
+                var b = document.querySelector("li.active");
+                if (b) b.classList.remove("active");
+                this.parentNode.classList.add('active');
+              };
+            }    
+    </script>

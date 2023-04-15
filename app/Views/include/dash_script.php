@@ -15,13 +15,4 @@
     <script src="assets/js/vertical/vertical-layout.min.js "></script>
 
     <script type="text/javascript" src="assets/js/script1.js "></script>
-    <script>
-            var a = document.querySelectorAll("a");
-            for (var i = 0, length = a.length; i < length; i++) {
-              a[i].onclick = function() {
-                var b = document.querySelector("li.active");
-                if (b) b.classList.remove("active");
-                this.parentNode.classList.add('active');
-              };
-            }    
-    </script>
+    

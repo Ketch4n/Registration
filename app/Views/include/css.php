@@ -1,4 +1,4 @@
-<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/img/peso.png" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
       <!-- Required Fremwork -->
@@ -13,16 +13,12 @@
       <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
- 
-  
- 
-    <!-- font-awesome-n -->
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-n.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <!-- scrollbar.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+      <!-- font-awesome-n -->
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-n.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+      <!-- custom -->
+      <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 
-<!-- custom -->
-<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/custom.css">

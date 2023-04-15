@@ -12,9 +12,34 @@
     <!-- menu js -->
     <script src="assets/js/pcoded.min.js"></script>
     <script src="assets/js/vertical/vertical-layout.min.js "></script>
+    
     <script type="text/javascript" src="assets/js/script1.js "></script>
 <!-- jquery slimscroll js -->
 <script type="text/javascript" src="assets/js/common-pages.js"></script>
+    <script src="assets/js/vertical/vertical-layout.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/script.js"></script> -->
 
- <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
+
+   
+   
+   
+   
+    <!-- waves js -->
+   
+    <!-- jquery slimscroll js -->
     
+
+    <!-- slimscroll js -->
+  
+
+    <!-- menu js -->
+   
+   
+
+    
+    
+    
+
+   

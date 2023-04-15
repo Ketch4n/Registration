@@ -36,6 +36,9 @@ $routes->get('/dashboard', 'Dashboard::index',['filter' => 'authGuard']);
 $routes->post('verify', 'Login::verify');
 
 $routes->get('signout', 'Login::signout');
+
+$routes->get('form', 'Form::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

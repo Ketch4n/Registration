@@ -23,7 +23,7 @@
   <body>
   <!-- Pre-loader start -->
   <?php echo view("include/preloader.php")?> 
- 
+
   <!-- Pre-loader end -->
 
     <section class="login-block">
